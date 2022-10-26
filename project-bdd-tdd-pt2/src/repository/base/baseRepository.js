@@ -11,3 +11,5 @@ class BaseRepository {
     return item;
   }
 }
+
+module.exports = BaseRepository;
