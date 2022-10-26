@@ -19,6 +19,11 @@ describe("CarService Suite Tests", () => {
       cars: carsDatabase,
     });
   });
+  it("should retrieve a random position from an array", () => {
+    const data = [0, 1, 2, 3, 4];
+    const result = carService.getRandomPositionFromArray(data);
+    expect(result).to.be.lte(data.length).and.be.gte(0);
+  });
   // it("given a carCategory it should retrieve a list of available cars", async () => {
   //   const car = mocks.validCar;
   //   const carCategory = Object.create(mocks.validCarCategory);
